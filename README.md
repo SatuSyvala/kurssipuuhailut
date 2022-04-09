@@ -1,6 +1,6 @@
 # kurssipuuhailut
 
-##kurssipuuhailujen tarkoitus on osoittaa, että kykenen ajattelemaan koodillisesti.
+## kurssipuuhailujen tarkoitus on osoittaa, että kykenen ajattelemaan koodillisesti.
 
 Pyrkitys tuoda tähän repoon esimerkkejä omien kurssitehtävien mukailluista tuotoksista kommentteineen.
 
