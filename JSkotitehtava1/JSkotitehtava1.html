@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" />
+<title>kotitehtava1</title>
+<body>
+
+<h2>Pinkoodi</h2>
+<p>Kiitos, että annat pin :</p>
+<input type="text" id="pin">
+<p id="tietokentta"></p>
+<button onclick="pinFunktio()">Kirjaudu sisään</button>
+<script>
+
+function pinFunktio()
+{
+var kayttajanpin = document.getElementById("pin").value;
+
+if (kayttajanpin == 2334)
+{
+alert("oikea pin");
+}
+else
+{
+alert("väärä pin");
+}
+}
+
+</script>
+</body>
+</html>

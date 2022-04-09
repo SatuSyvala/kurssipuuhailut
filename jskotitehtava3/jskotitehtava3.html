@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" />
+<title>kotitehtava3</title>
+<body>
+
+<h2>Maanjäristys</h2>
+<p>Kerro voimakkuus numeroina:</p>
+<input type="text" id="numero">
+<p id="tietokentta"></p>
+<button onclick="numeroFunktio()">Paina tästä</button>
+<script>
+
+function numeroFunktio()
+{
+var maanjäristysnumero = document.getElementById("numero").value;
+
+
+if (maanjäristysnumero <=2)
+    /* en saanut toimimaan 1||2 tai 1&&2*/
+{
+alert("Voimakkuus 1-2: Heikkoa tärinää, ei aineellisia vahinkoja. Ei havaita yleensä ilman mittauslaitteita.");
+}
+if (maanjäristysnumero==3)
+{
+alert("Voimakkuus 3: Heikkoa tärinää, energia vastaa salamaniskua.");
+}
+    if (maanjäristysnumero==4)
+{
+alert("Voimakkuus 4: Havaitaan ilman mittauslaitteita. Vähäiset tuhot mahdollisia, esimerkiksi irtonainen rappaus voi pudota seinistä.");
+}
+    if (maanjäristysnumero==5)
+{
+alert("Voimakkuus 5: Tärinä havaittavaa. Savupiiput ja heikot seinärakenteet voivat vaurioitua.");
+}
+    if (maanjäristysnumero==6)
+{
+alert("Voimakkuus 6: Järinä voi aiheuttaa suuria tuhoja, esimerkiksi tavalliset rakennukset voivat vaurioitua pahasti.");
+}
+    if (maanjäristysnumero==7)
+{
+alert("Voimakkuus 7: Voimakasta järinää, laajoja tuhoja. Vahvatkin rakenteet vaurioituvat merkittävästi.");
+}
+    if (maanjäristysnumero==8)
+{
+alert("Voimakkuus 8: Maanjäristykseltä suojatutkin rakennukset vaurioituvat. Energia vastaa ison ydinkärjen laukaisua.");
+}
+    if (maanjäristysnumero==9)
+{
+alert("Voimakkuus 9: Voimakkaita, laajoja ja erittäin tuhoisia järistyksiä.");
+}
+else
+{
+alert("Richterin asteikon luokittelu alkaa voimakkuudesta 1 ja päättyy voimakkuuteen 9.");
+}
+}
+
+</script>
+</body>
+</html>

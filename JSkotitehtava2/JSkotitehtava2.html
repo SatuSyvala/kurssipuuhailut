@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" />
+<title>kotitehtava2</title>
+    <link rel="stylesheet" type="text/css" href="CSS/jskoti2.css">
+<body>
+<h2> Noin laskin </h2>
+    <p> Huomioithan, että laskimen antamissa vastauksissa voi esiintyä suurpiirteisyyttä. </p>
+    <div class="container">
+<script >
+/* en saanut millään toimimaan desimaaleja -> parsefloat*/
+function yhteenlasku()
+{
+ num1=parseFloat(document.frmadd.txt1.value);
+ num2=parseFloat(document.frmadd.txt2.value);
+ num3=num1+num2;
+ vastaus=parseFloat(document.frmadd.txt3.value=num3);
+}
+function vahennyslasku()
+{
+ num1=parseInt(document.frmadd.txt1.value);
+ num2=parseInt(document.frmadd.txt2.value);
+ num3=num1-num2;
+ document.frmadd.txt3.value=num3;
+}
+function kertolasku()
+{
+ num1=parseInt(document.frmadd.txt1.value);
+ num2=parseInt(document.frmadd.txt2.value);
+ num3=num1*num2;
+ document.frmadd.txt3.value=num3;
+}
+function jakolasku()
+{
+ num1=parseInt(document.frmadd.txt1.value);
+ num2=parseInt(document.frmadd.txt2.value);
+ num3=num1/num2;
+ document.frmadd.txt3.value=num3;
+}
+</script>
+<form name="frmadd">
+
+ numero1 <input type ="number" name="txt1" ><br>
+ numero2 <input type ="number" name="txt2" ><br><br>
+ vastaus: <input type ="text" name="txt3"><br> <br>
+ 
+ <input type="button" value="+" name="but1" onClick="yhteenlasku()">
+ <input type="button" value="-" name="but2" onClick="vahennyslasku()">
+ <input type="button" value="x" name="but3" onClick="kertolasku()">
+ <input type="button" value="/" name="but4" onClick="jakolasku()">
+
+</form>
+    </div>
+</body>
+</html>

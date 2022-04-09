@@ -1,0 +1,23 @@
+body{
+    font-family: tahoma;
+    background-color: aquamarine;
+    text-align: center;
+}
+h2{
+    font-size: 300%;
+    color: peru;
+    font-family: cursive;
+}
+.container{
+    
+    background-color: gainsboro;
+    width: 450px;
+    height: 180px;
+    border: 20px solid peru;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 60px;
+    padding-left: 50px;
+    padding-top: 50px;
+ 
+}
